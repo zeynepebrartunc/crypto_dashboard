@@ -1,4 +1,4 @@
-# 📈 Crypto Dashboard Pro
+# 📈 Crypto Dashboard
 
 Canlı kripto para verilerini takip etmek, aramak, sıralamak ve favorilere eklemek için geliştirilmiş modern, modüler ve performans odaklı bir Web uygulaması. Proje, tarayıcı kaynaklarını ve API limitlerini optimize edecek şekilde ileri düzey JavaScript konseptleri uygulanarak tasarlanmıştır.
 
