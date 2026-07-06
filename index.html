@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crypto Dashboard</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-area">
+            <h1>Kripto Takip Paneli</h1>
+            <button id="temaBtn" title="Temayı Değiştir">🌙</button>
+        </div>
+        
+        <div class="controls">
+            <input type="text" id="aramaKutusu" placeholder="Coin ara... (Örn: Bitcoin)" autocomplete="off">
+            
+            <select id="siralaMenu">
+                <option value="varsayilan">Sıralama Seçin</option>
+                <option value="fiyatYuksek">Fiyata Göre (En Yüksek)</option>
+                <option value="fiyatDusuk">Fiyata Göre (En Düşük)</option>
+                <option value="isimAZ">İsim (A -> Z)</option>
+            </select>
+
+            <button id="getirBtn">Yenile</button>
+            <button id="favoriFiltreBtn">⭐ Sadece Favoriler</button>
+        </div>
+        
+        <div id="coinListesi" class="coin-grid"></div>
+    </div>
+
+    <script type="module" src="script/app.js"></script>
+</body>
+</html>

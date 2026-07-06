@@ -1,0 +1,81 @@
+/* CSS DEĞİŞKENLERİ (Tema Yönetimi İçin) */
+        root, :root {
+            --bg-color: #121214;
+            --card-color: #202024;
+            --border-color: #29292e;
+            --text-color: #e1e1e6;
+            --title-color: #00adb5;
+        }
+
+        /* Açık Tema Sınıfı */
+        .light-theme {
+            --bg-color: #f0f2f5;
+            --card-color: #ffffff;
+            --border-color: #dcdce6;
+            --text-color: #1c1c1e;
+            --title-color: #007a80;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-color); color: var(--text-color); padding: 40px; margin: 0; transition: background 0.3s, color 0.3s; }
+        .container { max-width: 1000px; margin: 0 auto; position: relative; }
+        
+        /* Üst Başlık ve Tema Butonu Alanı */
+        .header-area { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+        h1 { color: var(--title-color); margin: 0; }
+
+        /* Coin Başlığı ve Logo Hizalama CSS'leri */
+        .coin-title-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .coin-title-row h3 {
+            margin: 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .coin-title-row h3 span {
+            color: #a8a8b3;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        
+        .coin-logo {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        
+        #temaBtn { background: var(--card-color); color: var(--text-color); border: 1px solid var(--border-color); padding: 10px 15px; font-size: 18px; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; }
+
+        .controls { display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap; }
+        input, select { padding: 12px; font-size: 16px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--card-color); color: var(--text-color); outline: none; }
+        input { width: 280px; }
+        input:focus, select:focus { border-color: var(--title-color); }
+        
+        button { padding: 12px 24px; font-size: 15px; cursor: pointer; border-radius: 6px; border: none; font-weight: bold; transition: all 0.2s; }
+        #getirBtn { background: var(--title-color); color: #121214; }
+        #getirBtn:hover { opacity: 0.9; }
+        #favoriFiltreBtn { background: var(--card-color); color: #ffcc00; border: 1px solid #ffcc00; }
+        #favoriFiltreBtn:hover { background: #ffcc00; color: #121214; }
+        
+        .coin-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .coin-card { background: var(--card-color); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s, border-color 0.2s; }
+        .coin-card:hover { transform: translateY(-5px); border-color: var(--title-color); }
+        .coin-info h3 { margin: 0 0 10px 0; }
+        
+        .coin-price-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .coin-price { font-size: 20px; font-weight: bold; color: #04d361; word-break: break-word; }
+        
+        /* 📈 Düşüş ve Yükseliş Renkleri */
+        .price-up { color: #04d361; font-weight: bold; font-size: 14px; }
+        .price-down { color: #ff3333; font-weight: bold; font-size: 14px; }
+
+        .fav-btn { padding: 8px 12px; font-size: 13px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); width: 100%; cursor: pointer; transition: all 0.2s; }
+        .fav-btn.active { background: #ffcc00; color: #121214; border-color: #ffcc00; }
